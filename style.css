@@ -46,6 +46,7 @@ body{
 .cabecalho .desc-ini{
     display: flex;
     justify-content: center;
+    text-align: center;
     color: #25adf7;
     font-size: 14px;
     padding: 0px 20px;
