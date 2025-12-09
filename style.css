@@ -48,6 +48,7 @@ body{
     justify-content: center;
     color: #25adf7;
     font-size: 14px;
+    margin: 0 auto;
 }
 
 .cabecalho::after{
@@ -142,6 +143,49 @@ footer span{
 @media screen and (min-width:600px){
     .cabecalho .cx-logos{
         display: flex;
-        width: 320px;
+        align-items: center;
+        max-width: 600px;
+        column-gap: 30px;
+        padding: unset;
+        margin: 40px auto 10px;
+    }
+
+    .cabecalho .cx-logos #avalogo{
+        width: 35%;
+        margin-top: unset;
+    }
+
+    .cabecalho .cx-logos #smelogo{
+        width: 46%;
+    }
+
+    .sec-1 .cx-ava{
+        max-width: 918px;
+        margin: 0 auto 30px;
+    }
+
+    .sec-1 .cx-ava:hover{
+        box-shadow: 2px 2px 5px #ffffff;
+    }
+
+    .sec-1 .cx-ava .ava-img{
+        width: 14%;
+    }
+
+    .sec-1 .cx-ava .ava-desc-btn{
+        width: 86%;
+        padding-left: 30px;
+    }
+
+    .sec-1 .cx-ava .ava-desc-btn h1{
+        font-size: 24px;
+    }
+
+    .sec-1 .cx-ava .ava-desc-btn p{
+        font-size: 18px;
+    }
+
+    .sec-1 .cx-ava .ava-desc-btn a{
+        font-size: 16px;
     }
 }
