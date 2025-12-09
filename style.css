@@ -6,7 +6,119 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho{
+    padding-bottom: 20px;
+}
+
+.cabecalho .cx-logos{
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 18px 20px;
+}
+
+.cabecalho .cx-logos img{
+    width: 100%;
+}
+
+.cabecalho .cx-logos #avalogo{
+    margin-top: 20px;
+}
+
+.cabecalho .desc-ini{
+    display: flex;
+    justify-content: center;
+    color: #25adf7;
+}
+
+.cabecalho::after{
+    content: '';
+    display: block;
+    height: 16px;
+    margin-top: 20px;
+    width: 100%;
+    background-image: linear-gradient(45deg, #0861d2 40%, #fad218 40%, #34df69 20%);
+    background-size: 120%;
+    background-position: left;
+    animation: moveFundo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes moveFundo {
+    1%{background-position: left;}
+    50%{background-position: right;}
+    100%{background-position: left;}
+}
+
+.sec-1{
+    background-image: linear-gradient(145deg, #25adf7, #25adf7, #25adf7, #f4f4f4);
+    padding: 10px 18px;
+}
+
+.sec-1 .cx-ava{
+    display: flex;
+    align-items: center;
+    border: solid 1px #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.sec-1 .cx-ava img{
+    width: 95%;
+    filter: invert(1);
+}
+
+.sec-1 .cx-ava .ava-img{
+    width: 16%;
+}
+
+.sec-1 .cx-ava .ava-desc-btn{
+    width: 84%;
+    padding-left: 10px;
+}
+
+.sec-1 .cx-ava .ava-desc-btn a{
+    display: block;
+    text-align: center;
+    width: 260px;
+    color: #0861d2;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.sec-1 .cx-ava .ava-desc-btn a:hover{
+    background-color: #34df69;
+    color: #ffffff;
+    transition: background-color .3s;
+}
+
+
+footer{
+    padding: 30px 18px;
+    text-align: center;
+}
+footer p{
+    font-weight: 900;
+    color: #0861d2;
+}
+footer span{
+    font-size: 10px;
+
+}
+
+/*
+body{
+    font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(145deg, #25adf7, #25adf7, #f4f4f4);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .header{
@@ -14,6 +126,12 @@ body{
     height: auto;
     margin: 0 auto;
     padding: 40px 0px;
+}
+@media screen and (max-width:600px){
+    .header{
+        max-width: 600px;
+        padding: 40px 20px;
+    }
 }
 
 .header::after{
@@ -38,20 +156,32 @@ body{
     100%{background-position: left;}
 }
 
-header .cx-logos{
+.header .cx-logos{
     display: flex;
     align-items: center;
     justify-content:center;
     width: 918px;
     margin: 0px auto 40px;
 }
+@media screen and (max-width:600px){
+    .header .cx-logos{
+        max-width: 540px;
+        display: block;
+        margin: 0 auto;
+    }
+}
 
-header .cx-logos img{
+.header .cx-logos img{
     width: 50%;
     padding: 0px 40px 0px;
 }
+@media screen and (max-width:600px){
+    .header .cx-logos img{
+        width: 50%;
+    }
+}
 
-header .cx-logos #smelogo{
+.header .cx-logos #smelogo{
     width: 60%;
 }
 
@@ -78,14 +208,26 @@ header .cx-logos #smelogo{
 .header .desc-ini{
     width: 918px;
     margin: auto;
-    color: #ffffff;
+    color: #0861d2;
     text-align: center;
     font-size: 26px;
+}
+@media screen and (max-width:600px){
+    .header .desc-ini{
+        max-width: 600px;
+    }
 }
 
 .sec-1{
     width: 918px;
     margin: 40px auto 0px;
+}
+@media screen and (max-width:600px){
+    .sec-1{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0px 16px;
+    }
 }
 
 .sec-1 .cx-ava{
@@ -96,13 +238,18 @@ header .cx-logos #smelogo{
     border-radius: 14px;
     padding: 10px;
 }
+@media screen and (max-width:600px){
+    .sec-1 .cx-ava{
+        width: 100%;
+    }
+}
 
 .sec-1 .cx-ava .ava-img{
-    width: 30%;
+    width: 40%;
 }
 
 .sec-1 .cx-ava .ava-img img{
-    width: 70%;
+    width: 60%;
     filter: invert(1);
 }
 
@@ -117,6 +264,7 @@ header .cx-logos #smelogo{
     text-align: center;
     color: #000000;
     background-color: #ffffff;
+    color: #0861d2;
     width: 260px;
     padding: 10px 5px;
     border-radius: 10px;
@@ -139,3 +287,4 @@ footer p{
 footer span{
     font-size: 10px;
 }
+*/
