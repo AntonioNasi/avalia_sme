@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(145deg, #25adf7, #25adf7, #f4f4f4);
+}
+
+#main-ctn{
+    height: 100vh;
+    width: 918px;
+    margin: 18px auto 0px;
+}
+
+#main-ctn .img-logo{
+    display: flex;
+    justify-content: center;
+}
+
+#main-ctn .img-logo img{
+    width: 50%;
+    animation: surgir;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes surgir {
+    0%{filter: opacity(0%); transform: scale(0%);}
+    100%{filter: opacity(100%);}
+}
