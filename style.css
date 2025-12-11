@@ -1,3 +1,7 @@
+/*---------------------------------------------
+Formatação global
+----------------------------------------------*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,15 +12,41 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
+/*--------------------------------------------------
+Formatação para telas até de 600px "Mobile First"
+----------------------------------------------------*/
+
 .cabecalho{
-    padding-bottom: 0px;
+    background-image: url(./sme.jpeg);
+    background-position: left center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation-name: moveSme;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: -1px auto 0px
+    border-top: solid 1px transparent;
+}
+
+@keyframes moveSme {
+    0%{background-position: left center; background-size: 100%;}
+    33%{background-position: center center; background-size: 120%;}
+    66%{background-position: right center; background-size: 100%;}
+    100%{background-position: left center; background-size: 100%;}
+}
+
+#transparencia{
+    border-top: solid 1px transparent;
+    background-color: rgba(255, 255, 255, .9);
 }
 
 .cabecalho .cx-logos{
     max-width: 220px;
     margin: 0 auto;
     display: block;
-    padding: 30px 18px 20px;
+    padding: 20px 18px 20px;
 }
 
 .cabecalho .cx-logos img{
@@ -28,13 +58,9 @@ body{
 }
 @keyframes surgir {
     0%{filter: opacity(0); transform: scale(0);}
-
     40%{filter: opacity(1); transform: scale(1);}
-
     45%{filter: opacity(1); transform: scale(1);}
-
     90%{filter: opacity(1); filter: grayscale(1); transform: scale(1);}
-
     100%{filter: opacity(1); filter: grayscale(1); transform: scale(1);}
    
 }
@@ -49,7 +75,7 @@ body{
     text-align: center;
     color: #25adf7;
     font-size: 14px;
-    padding: 0px 20px;
+    padding: 0px 20px 20px;
     margin: 0 auto;
 }
 
@@ -57,7 +83,6 @@ body{
     content: '';
     display: block;
     height: 16px;
-    margin-top: 20px;
     width: 100%;
     background-image: linear-gradient(45deg, #0861d2 40%, #fad218 40%, #34df69 20%);
     background-size: 120%;
@@ -72,6 +97,48 @@ body{
     1%{background-position: left;}
     50%{background-position: right;}
     100%{background-position: left;}
+}
+
+.preSec{
+    padding: 30px 18px;
+    background-color: #25adf7;
+}
+
+.preSec .cx-preSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.preSec .cx-preSec .img-presec{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-image: linear-gradient(45deg, #34df69 50%, #fad218 50%);
+    margin-bottom: 20px;
+}
+
+.preSec .cx-preSec .img-presec img{
+    width: 90%;
+    border-radius: 100%;
+}
+
+.preSec p{
+    text-align: justify;
+    color: #ffffff;
+    animation-name: surgirTxt;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes surgirTxt {
+    0%{filter: opacity(.1);}
 }
 
 .sec-1{
@@ -134,13 +201,17 @@ footer{
 }
 footer p{
     font-weight: 900;
-    color: #0861d2;
+    color: #25adf7;
 }
 footer span{
     font-size: 10px;
 
 }
 
+
+/*---------------------------------------------
+Formatação para telas a partir de 600px
+----------------------------------------------*/
 
 @media screen and (min-width:600px){
     .cabecalho .cx-logos{
@@ -159,6 +230,12 @@ footer span{
 
     .cabecalho .cx-logos #smelogo{
         width: 46%;
+    }
+
+    .preSec p{
+        max-width: 918px;
+        margin: 0 auto;
+        font-size: 18px;
     }
 
     .sec-1 .cx-ava{
