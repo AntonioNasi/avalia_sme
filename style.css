@@ -109,19 +109,23 @@ Formatação para telas até de 600px "Mobile First"
     align-items: center;
     justify-content: center;
     column-gap: 30px;
-    max-width: 380px;
+    max-width: 340px;
     margin: 0 auto;
 }
 
 .preSec .cx-preSec .img-presec{
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
     background-image: linear-gradient(45deg, #34df69 50%, #fad218 50%);
     margin-bottom: 20px;
+    animation-name: surgirTxt;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
 .preSec .cx-preSec .img-presec img{
