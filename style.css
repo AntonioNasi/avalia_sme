@@ -26,7 +26,7 @@ Formatação para telas até de 600px "Mobile First"
     animation-duration: 60s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    margin: -1px auto 0px
+    margin: -1px auto 0px;
     border-top: solid 1px transparent;
 }
 
