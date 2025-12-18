@@ -99,6 +99,29 @@ Formatação para telas até de 600px "Mobile First"
     100%{background-position: left;}
 }
 
+#contador{
+    padding: 5px;
+    border-radius: 8px;
+    margin: 0px auto 20px;
+    display: flex;
+    justify-content: center;
+}
+#contador div{
+    background-color: #ffffff;
+    padding: 14px;
+    margin: 0px 8px 0px;
+    border-radius: 8px;
+}
+#contador div span{
+    color:#25adf7;
+    font-size: 18px;
+    font-weight: 900;
+}
+#contador div small{
+    margin-left: 4px;
+    color: #25adf7;
+}
+
 .preSec{
     padding: 30px 18px;
     background-color: #25adf7;
