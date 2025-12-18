@@ -100,16 +100,15 @@ Formatação para telas até de 600px "Mobile First"
 }
 
 #contador{
-    padding: 5px;
     border-radius: 8px;
     margin: 0px auto 20px;
     display: flex;
     justify-content: center;
+    column-gap: 6px;
 }
 #contador div{
     background-color: #ffffff;
-    padding: 14px;
-    margin: 0px 8px 0px;
+    padding: 10px;
     border-radius: 8px;
 }
 #contador div span{
