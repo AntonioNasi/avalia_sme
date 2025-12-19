@@ -1,5 +1,5 @@
 // Data final (AAAA-MM-DDTHH:MM:SS)
-  const dataFinal = new Date("2025-12-19T23:59:59");
+  const dataFinal = new Date("2025-12-23T23:59:59");
 
   function atualizarContagem() {
     const agora = new Date();

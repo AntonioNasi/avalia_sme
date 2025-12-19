@@ -99,6 +99,30 @@ Formatação para telas até de 600px "Mobile First"
     100%{background-position: left;}
 }
 
+.atencao{
+    display: flex;
+    column-gap: 10px;
+    margin: 0px auto 10px;
+    background-color: #fe8416;
+    border-radius: 8px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.atencao img{
+    width: 10%;
+    animation-name: alert;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes alert {
+    to{filter: opacity(0);}
+}
+.atencao p{
+    font-weight: 600;
+}
+
 #contador{
     border-radius: 8px;
     margin: 0px auto 20px;
@@ -258,10 +282,17 @@ Formatação para telas a partir de 600px
         width: 46%;
     }
 
-    .preSec p{
+    .preSec #txt-ini{
         max-width: 918px;
         margin: 0 auto;
         font-size: 18px;
+    }
+
+    .preSec .atencao{
+        max-width: 302px;
+    }
+    .preSec .atencao img{
+        width: 14%;
     }
 
     .sec-1 .cx-ava{
