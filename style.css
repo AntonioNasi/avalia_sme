@@ -100,6 +100,7 @@ Formatação para telas até de 600px "Mobile First"
 }
 
 .atencao{
+    max-width: 302px;
     display: flex;
     column-gap: 10px;
     margin: 0px auto 10px;
@@ -110,7 +111,7 @@ Formatação para telas até de 600px "Mobile First"
     justify-content: center;
 }
 .atencao img{
-    width: 10%;
+    width: 14%;
     animation-name: alert;
     animation-duration: 1s;
     animation-timing-function: linear;
